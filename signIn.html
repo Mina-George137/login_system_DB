@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="col-12">
+
+            <div class="container text-center w-75 shading my-5">
+                <div class="p-5 w-75 m-auto">
+                    <h1 class="p-1 text-center font-weight-bold">Smart Login System</h1>
+                    <div class="form-group">
+                        <form action="postDB.php" method="post" class=" form-group">
+
+                            <input class="form-control m-2 py-3" type="text" id="registerName" name="regName" placeholder="Enter your name">
+                            <input type="email" id="registerEmail" class="form-control m-2 py-3" name="regEmail" placeholder="Enter your Email">
+                            <input type="password" id='registerPassword' class="form-control m-2 py-3" name="regPass" placeholder="Enter password">
+
+                            <input type="password" id="confirmRegistPassword" class="form-control m-2 py-3" placeholder="Confirm password">
+                            <p class="text-danger font-weight-light mb-3 p-2" id="warningMsg">email already exists</p>
+                            <button type="submit" value="Submit" class="btn btn-lg m-2 w-100 btn-outline-primary" id="signingButton">Sign in</button>
+                        </form>
+                    </div>
+
+                </div>
+
+                <span class="havingAccount p-5">Don't have an account ? <a id="signingLink" href="index.html" class="text-white">Login</a></p>
+                </span>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+
+
+    <script src="js/sign.js"></script>
+</body>
+
+</html>
